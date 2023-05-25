@@ -1,0 +1,58 @@
+
+//For Encapsulation program we have to create 2 classes
+
+
+class School1
+{
+
+private int salary;
+
+public static void main(String[] args)
+
+{
+School1 teacher = new School1(); 
+teacher.salary = 20000; 
+School1 physics_teacher = new School1(); 
+physics_teacher.salary = 25000;  
+
+System.out.println(teacher.salary);
+teacher.recurit();
+
+}
+
+
+
+private void recurit()
+{
+System.out.println("Resuritment");
+}
+
+
+void teach()
+{
+System.out.println("Teaching");
+//int ab;
+//System.out.println(ab);
+}
+
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+//In this class, we are calling the first class School1 to execute the program. Since the keyword is "private" we could not see the output and it will show private access modifier statement.
+
+
+class Student
+{
+
+public static void main(String[] args)
+{
+School1 schoolobj = new School1();
+schoolobj.teach();
+
+System.out.println(schoolobj.salary);
+schoolobj.recurit();
+}
+
+}
