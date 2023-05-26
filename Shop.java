@@ -1,13 +1,13 @@
 class Shop
 {
-static String shopname="Bharani";
+static String Shopname="Bharani";
 int price;
 int discount;
 public static void main(String[] args)
 {
-shop prod1 = new shop();
-shop prod2 = new shop();
-shop prod3 = new shop();
+Shop prod1 = new Shop();
+Shop prod2 = new Shop();
+Shop prod3 = new Shop();
 prod1.price = 100;
 prod1.discount = 20;
 prod2.price = 200;
@@ -16,7 +16,7 @@ int actual_price = prod2.sell(); //method callings
 System.out.println("Actual price is" + actual_price);
 prod1.sell();  // Method Calling Statement
 prod2.bill();
-shop.clean();
+Shop.clean();
 }
 
 void bill()
