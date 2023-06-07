@@ -34,6 +34,7 @@ public class Armstrong
 		return arm;
 		//System.out.println("The given number is "+arm);
 	}
+
 }
 	
 
