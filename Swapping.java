@@ -4,6 +4,7 @@ public class Swapping
 {
 	
 	public static void main(String[] args) 
+
 	{
 		Swapping sw = new Swapping();
 		sw.swap_amount(10,20);
