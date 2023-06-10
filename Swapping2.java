@@ -4,6 +4,7 @@ public class Swapping2
 {
 
 	public static void main(String[] args) 
+
 	{
 		Swapping2 sw = new Swapping2();
 		sw.swap_water(123,234);
