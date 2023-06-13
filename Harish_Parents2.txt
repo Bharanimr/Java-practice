@@ -1,0 +1,69 @@
+//Encapuslation program using package-private(default) keyword
+
+
+package Namakkal;
+
+public class Harish_Parents 
+{
+	//int doorNo=100;
+	int age=20;
+	public static void main(String[] args)
+	{
+		Harish_Parents hp=new Harish_Parents();
+		//System.out.println(hp.doorNo);
+		hp.personal_details();
+		System.out.println(hp.age);
+	}
+	private void personal_details()
+	{
+		System.out.println("Personal Details");
+	}
+}
+
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+package Namakkal;                                               //We can access (default) fields and methods from same class, other class in same package.
+
+public class Neighbour 
+{
+
+	public static void main(String[] args) 
+	{
+		Harish_Parents hh = new Harish_Parents(); 
+		System.out.println(hh.doorNo);
+        System.out.println(hp.age);
+		hh.personal_details();
+		
+	}
+
+}
+
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+package Trichy;                                                  //We cannot access (default) fields and methods from other class in other package.
+
+import Namakkal.Harish_Parents; 
+
+public class Yaro 
+{
+
+	public static void main(String[] args) 
+	{
+		Harish_Parents hp=new Harish_Parents();
+		System.out.println(hh.doorNo);
+        System.out.println(hp.age);
+		hh.personal_details();
+
+	}
+
+}
+
+
+
