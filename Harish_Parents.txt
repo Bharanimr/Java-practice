@@ -1,0 +1,66 @@
+//Encapuslation program using protected keyword
+
+
+
+package Namakkal;
+
+public class Harish_Parents 
+{
+	//int doorNo=100;
+	public static void main(String[] args)
+	{
+		Harish_Parents hp=new Harish_Parents();
+		//System.out.println(hp.doorNo);
+		hp.give_invitation();
+	}
+	protected void give_invitation()
+	{
+	    System.out.println("harish marriage");
+	}
+
+}
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+package Namakkal;                                                   //We can access protected fields and methods from same class, other class in same package.
+
+public class Neighbour                                              
+{
+
+	public static void main(String[] args) 
+	{
+		Harish_Parents hh = new Harish_Parents(); 
+		//System.out.println(hh.doorNo);
+		hh.give_invitation();
+	}
+
+}
+
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+package Trichy;                                                    //We cannot access protected fields and methods from other class in other package.
+
+import Namakkal.Harish_Parents;                                     
+
+public class Yaro 
+{
+
+	public static void main(String[] args) 
+	{
+		Harish_Parents hp=new Harish_Parents(); 
+		 //System.out.println(hp.doorNo);
+		 hp.give_invitation();
+
+	}
+
+}
+
+
+
