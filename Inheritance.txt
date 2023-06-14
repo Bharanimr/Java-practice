@@ -1,0 +1,48 @@
+//INHERITANCE
+
+package Namakkal;
+
+public class Harish_parents 
+{
+	int doorNo=100;
+	private int age=20;
+	public static void main(String[] args) 
+	{
+		Harish_parents hp = new Harish_parents();
+	    hp.chooseBride();
+	    
+	}
+
+	protected void chooseBride()
+	  {
+	    System.out.println("Status Education ");
+	  }
+}
+
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+package Trichy;
+
+import Namakkal.Harish_parents;
+
+public class Harish extends Harish_parents
+{
+
+	public static void main(String[] args) 
+	{
+		Harish harish = new Harish();
+		harish.chooseBride();
+		
+	}
+	//Method Overriding
+	  protected void chooseBride()
+	  {
+	    System.out.println("My Life My Bride ");
+	  }
+
+}
+
+
