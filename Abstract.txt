@@ -1,0 +1,90 @@
+//Abstraction 
+
+public abstract class Government 
+{
+	  
+	  public abstract void raid();
+	  
+	  public abstract void collect_documents(); 
+	  
+	  public void pay_salary()
+	  {
+	    System.out.println("Pay Salary");
+	  }
+	  
+	  {
+		  System.out.println("Hi");
+	  }
+
+}
+
+
+---------------------------------------------------------------------------------------------------
+
+public class Enforcement extends Government
+{
+
+	public static void main(String[] args) 
+	{
+	
+	}
+
+	@Override
+	public void raid() 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void collect_documents() 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void make_fun()
+	{
+		System.out.println("Make fun");
+	}
+}
+
+
+
+//---------------------------------------------------------------------------------------------------------------------
+
+public class Minister extends Government
+{
+
+	public static void main(String[] args) 
+	{
+		Government officials = new Minister();  ///Dynamic Binding
+		officials.raid();
+		officials.collect_documents();
+		officials.pay_salary();
+	}
+
+	@Override
+	public void raid() 
+	{
+		System.out.println("Cooperate Raid");
+	}
+
+	@Override
+	public void collect_documents() 
+	{
+		System.out.println("Give necessary documents");
+	}
+	
+	public void announce_schemes()
+	{
+		System.out.println("Announce Schemes");
+	}
+	
+	public void lloot()
+	{
+		System.out.println("Looting");
+	}
+
+}
+
