@@ -1,0 +1,70 @@
+//Interface 
+
+public interface Central_Govt 
+{
+	int FINE = 1000;
+	
+	public void go_by_flight();
+}
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+
+public interface Govt extends Central_Govt 
+{
+	int no_helmet_fine=1000;
+	
+public void follow_traffic_rules();
+}
+
+//---------------------------------------------------------------------------------------------------------------------------
+
+
+public interface France_Govt 
+{
+	public void keep_visa();
+}
+
+//--------------------------------------------------------------------------------------------------------------------------
+
+
+public class Bharani implements Govt, France_Govt
+{
+
+	public static void main(String[] args) 
+	{
+		Bharani bb = new Bharani(); 
+	    bb.follow_traffic_rules();
+	    System.out.println(Bharani.no_helmet_fine);
+	    bb.play();
+	    Govt trafficPolice = new Bharani(); 
+		trafficPolice.follow_traffic_rules();
+		
+		Central_Govt crpf = new Bharani();
+		crpf.go_by_flight();
+	}
+
+	@Override
+	public void follow_traffic_rules() 
+	{
+		System.out.println("Two Wheeler Rules ");		
+	}
+	
+	public void play()
+	{
+		System.out.println("Playing Badminton");
+	}
+
+	@Override
+	public void go_by_flight() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keep_visa() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
