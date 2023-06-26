@@ -1,0 +1,58 @@
+//Assignments Programms Abstraction
+
+
+public abstract class Headoffice 
+{
+	
+	public void check_accounts(int amount)
+	{
+		System.out.println("Accounts " +amount);
+	}
+	public int pay_tax(int amount)
+	{
+		return amount;
+	}
+	public abstract void receive_Customers();
+
+}
+
+//---------------------------------------------------------------
+
+
+public abstract class Branch_Plan extends Headoffice
+{
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Method");
+	}
+	public void do_interview()
+	{
+		System.out.println("Interview");
+	}
+
+}
+
+//-----------------------------------------------------------------
+
+
+public class Branch extends Branch_Plan
+{
+
+	public static void main(String[] args) 
+	{
+		Branch branch = new Branch();
+		branch.check_accounts(1000);
+		int amount=branch.pay_tax(2000);
+		System.out.println("Tax amount is " +amount);
+		branch.do_interview();
+	}
+	
+	@Override
+	public void receive_Customers() 
+	{
+		System.out.println("Recieve customers");		
+	}
+
+}
+
