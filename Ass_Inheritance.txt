@@ -1,0 +1,51 @@
+//Assignment Programms Inheritance
+
+
+public class Grandma 
+{
+	String name = "Stella"; 
+	public void work()
+	{
+		System.out.println("Super class");
+	}
+
+}
+
+//---------------------------------------------------
+
+
+public class Mother extends Grandma
+{
+	String name = "Stella";
+	public void work()
+	{
+		System.out.println(name);
+		System.out.println(super.name);
+		super.work();
+	}
+}
+
+//---------------------------------------------------
+
+
+public class Kid extends Mother
+{
+	String name = "Suman";
+	public static void main(String[] args) 
+	{
+		Kid kid =new Kid();
+		kid.study();
+	}
+	public void work()
+	{
+		System.out.println("Work");
+		System.out.println(name);
+		System.out.println(super.name);
+	}
+	public void study()
+	{
+		work();
+		System.out.println("Study");
+	}
+
+}
