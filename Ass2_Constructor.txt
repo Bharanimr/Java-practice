@@ -1,0 +1,84 @@
+//Expected Understanding: Abstraction, Inheritance, return keyword, Method Arguments, Constructor
+
+public abstract class SmartPhone 
+{
+	abstract int call(int seconds);
+	abstract void sendMessage();
+	abstract void receiveCall();
+	
+	void browse()
+	{
+		System.out.println("SmartPhone Browsing");
+	}
+	
+	public SmartPhone()
+	{
+	System.out.println("Smartphone under development");
+	}
+
+}
+
+
+//--------------------------------------------------------------------------------
+
+
+public abstract class FactoryDemo extends SmartPhone
+{
+	boolean isOriginalPiece=false;
+	int price=0;
+	
+	abstract void verifyFingerPrint();
+	
+	abstract void providePattern();
+	
+	void browse()
+	{
+		System.out.println("Factory Demo browsing");
+	}
+	
+
+}
+
+//--------------------------------------------------------------------------------
+
+public class Samsung extends FactoryDemo
+{
+	static int price=5000;
+	public static void main(String[] args) 
+	{
+		Samsung sam = new Samsung();
+		sam.browse();
+		System.out.println(sam.price);
+	}
+
+	@Override
+	void verifyFingerPrint() 
+	{
+				
+	}
+
+	@Override
+	void providePattern() 
+	{
+				
+	}
+
+	@Override
+	int call(int seconds) 
+	{
+		return 0;
+	}
+
+	@Override
+	void sendMessage() 
+	{
+				
+	}
+
+	@Override
+	void receiveCall() 
+	{
+				
+	}
+
+}
