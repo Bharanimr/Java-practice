@@ -1,0 +1,76 @@
+//Learning private, default and public Access Modifiers, Creating Package and understanding its usage, Calling Methods with/without arguments
+
+
+public class SBI 
+{
+	private String empName="Bharani";
+	private String empId="5B";
+	private static String branch_name = "Chennai";
+	
+	public void get_loan(int amount)
+	{
+		System.out.println("Loan Amount is " +amount);
+	}
+	public void create_account()
+	{
+		System.out.println("Account created ");
+	}
+	public String getEmpName() {
+		return empName;
+	}
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	public String getEmpId() {
+		return empId;
+	}
+	public void setEmpId(String empId) {
+		this.empId = empId;
+	}
+	public static String getBranch_name() {
+		return branch_name;
+	}
+	public static void setBranch_name(String branch_name) {
+		SBI.branch_name = branch_name;
+	}
+	
+
+}
+
+//------------------------------------------------------------------------------------------
+
+
+class Account_Holder {
+
+	public static void main(String[] args) 
+	{
+		SBI ah = new SBI();
+		System.out.println(ah.getEmpName());
+		System.out.println(ah.getEmpId());
+		System.out.println(ah.getBranch_name());
+		ah.create_account();
+		ah.get_loan(100000);
+		
+	}
+
+}
+
+//-----------------------------------------------------------------------------------------
+
+
+import bank.chennai.SBI;
+
+public class Account_Holder_Madurai 
+{
+
+	public static void main(String[] args) 
+	{
+		SBI ah = new SBI();
+		System.out.println(ah.getEmpName());
+		System.out.println(ah.getEmpId());
+		System.out.println(ah.getBranch_name());
+		ah.create_account();
+		ah.get_loan(100000);
+	}
+
+}
