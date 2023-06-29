@@ -1,0 +1,68 @@
+//Expected Understanding: Interface, Class, static variables, dynamic binding
+
+public interface Actor 
+{
+	boolean makeupRequired = true;
+	String address = "Chennai";
+	
+	void act();
+	void dance();
+	void sing();
+}
+
+
+//----------------------------------------------------------------
+
+
+public class ActorSivakumar implements Actor
+{
+	static String address="Coimbatore";
+
+	public ActorSivakumar(int i, String string) 
+	{
+	
+	}
+
+	public ActorSivakumar() 
+	{
+	
+	}
+
+	public static void main(String[] args) 
+	{
+		ActorSivakumar as = new ActorSivakumar(65, "Audi Car");
+		Actor ac = new ActorSivakumar();
+		as.act();
+		as.dance();
+		as.sing();
+		as.speaking();
+		System.out.println(address);
+		System.out.println(ac.address);
+		
+	}
+	
+	void speaking()
+	{
+		System.out.println("Speaking");
+	}
+	
+	@Override
+	public void act() 
+	{
+		System.out.println("Acting");		
+	}
+
+	@Override
+	public void dance() 
+	{
+		System.out.println("Dancing");		
+	}
+
+	@Override
+	public void sing() 
+	{
+		System.out.println("Singing");		
+	}
+	
+
+}
