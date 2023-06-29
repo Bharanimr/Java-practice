@@ -1,0 +1,93 @@
+//Expected Understanding: Interface, access modifiers, Method Overriding
+
+
+package Tamilnadu.chennai;
+
+public interface TrafficRulesChennai 
+{
+	String trafficCommisssioner = "Kavin";
+	
+	void goByDieselVehicle();
+	void goByBicycle();
+}
+
+//-----------------------------------------------------------------------------
+
+
+package Tamilnadu.chennai;
+
+public class CommonManInChennai implements TrafficRulesChennai
+{
+
+	public static void main(String[] args) 
+	{
+		CommonManInChennai cic = new CommonManInChennai();
+		cic.goByDieselVehicle();
+		cic.goByBicycle();
+	}
+
+	@Override
+	public void goByDieselVehicle() 
+	{
+		System.out.println("Use Diesel Vehicle");	
+	}
+
+	@Override
+	public void goByBicycle() 
+	{
+		System.out.println("Go by Bicycle");		
+	}
+
+}
+
+//---------------------------------------------------------------------------------
+
+
+package india.newdelhi;
+
+interface TrafficRulesDelhi 
+{
+	String trafficCommisssioner = "Navin";
+	
+	void dontGoByDieselVehicle();
+	
+	void goByBicycle();
+}
+
+//-----------------------------------------------------------------------------------
+
+
+package india.newdelhi;
+
+import Tamilnadu.chennai.TrafficRulesChennai;
+
+public class CommonManInDelhi implements TrafficRulesDelhi, TrafficRulesChennai
+{
+
+	public static void main(String[] args) 
+	{
+		CommonManInDelhi cmd = new CommonManInDelhi();
+		cmd.dontGoByDieselVehicle();
+		cmd.goByBicycle();
+		cmd.goByDieselVehicle();
+	}
+
+	@Override
+	public void dontGoByDieselVehicle() 
+	{
+		System.out.println("Don't use Diesel Vehicle");	
+	}
+
+	@Override
+	public void goByBicycle() 
+	{
+		System.out.println("Go by Bicycle");	
+	}
+
+	@Override
+	public void goByDieselVehicle() 
+	{
+		System.out.println("Use Diesel Vehicle");
+	}
+	
+}
