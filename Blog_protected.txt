@@ -1,0 +1,32 @@
+//ENCAPSULATION - PROTECTED
+
+package com.bharani;
+
+public class Protected_Encaps 
+{
+	protected void display() 
+    { 
+         System.out.println("Hello Bharani"); 
+    } 
+
+}
+
+
+---------------------------------------------------------------------------------------------------
+
+
+package Trichy;
+
+import com.bharani.Protected_Encaps;
+
+public class Protected_Encaps2 extends Protected_Encaps
+{
+
+	public static void main(String[] args) 
+	{
+		Protected_Encaps2 obj = new Protected_Encaps2(); 
+		obj.display(); 
+	}
+
+}
+
