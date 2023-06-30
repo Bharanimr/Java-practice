@@ -1,0 +1,30 @@
+//ENCAPSULATION
+
+package com.bharani;
+
+public class Public_Encaps 
+{
+	public void display() 
+    { 
+         System.out.println("Hi! This is Bharani"); 
+    } 
+
+}
+
+
+----------------------------------------------------------------------------------------
+
+
+package Trichy;
+
+import com.bharani.*;
+public class Public_Encaps2
+{
+
+	public static void main(String[] args) 
+	{
+		Public_Encaps obj = new Public_Encaps();
+		obj.display();
+	}
+
+}
