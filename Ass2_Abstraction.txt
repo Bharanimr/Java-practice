@@ -2,11 +2,11 @@
 
 public abstract class India 
 {
-	abstract void speakLanguage();
-	abstract void eat();
-	abstract void dress();
+	public abstract void speakLanguage();
+	public abstract void eat();
+	public abstract void dress();
 	
-	String capital = "New Delhi";
+	static String capital = "New Delhi";
 
 	public India(String primeMinister)
 	{
@@ -24,12 +24,12 @@ public abstract class SouthIndia extends India
 		super(primeMinister);
 	}
 
-	void cultivate()
+	public void cultivate()
 	{
 		System.out.println("Rice and Wheat cultivation");
 	}
 	
-	void livingStyle()
+	puclic void livingStyle()
 	{
 		System.out.println("Average development");
 	}
@@ -49,35 +49,39 @@ public class TamilNadu extends SouthIndia
 
 	public static void main(String[] args) 
 	{
-		India id = new TamilNadu("Modi");
-		System.out.println("India capital is: " +id.capital);
-		System.out.println("TamilNadu capital is: " +capital);
+        SouthIndia si = new TamilNadu("Modi");
+        si.dress();
+		si.eat();
+		si.speakLanguage();
+		si.livingStyle();
+		si.cultivate();
+		System.out.println("India capital is: " +India.capital);
+		System.out.println("TamilNadu capital is: " +TamilNadu.capital);
 		
-		SouthIndia si = new TamilNadu(capital);
 	}
 
 	@Override
-	void speakLanguage() 
+	public void speakLanguage() 
 	{
 		System.out.println("Tamil");	
 	}
 
 	@Override
-	void eat() 
+	public void eat() 
 	{
 		System.out.println("Briyani");	
 	}
 
 	@Override
-	void dress() 
+	public void dress() 
 	{
 		System.out.println("Shirt Dhoti");		
 	}
-	void cultivate()
+	public void cultivate()
 	{
 		System.out.println("Rice and Sugar cane cultivation");
 	}
-	void livingstyle()
+	public void livingstyle()
 	{
 		System.out.println("Above Average development");
 	}
