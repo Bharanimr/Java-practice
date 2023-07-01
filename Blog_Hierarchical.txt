@@ -1,0 +1,68 @@
+//HIERARCHICAL INHERITANCE
+
+package com.bharani;
+
+public class Hierarchical_Inheritance 
+{
+	public void print_A() 
+    {
+         System.out.println("Class A"); 
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------
+
+
+package com.bharani;
+
+public class Hierarchical_Inheritance2 extends Hierarchical_Inheritance
+{
+	public void print_B() 
+    { 
+         System.out.println("Class B"); 
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------
+
+
+package com.bharani;
+
+public class Hierarchical_Inheritance3 extends Hierarchical_Inheritance
+{
+	public void print_C() 
+    {
+         System.out.println("Class C"); 
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------
+
+
+package com.bharani;
+
+public class Hierarchical_Inheritance4 extends Hierarchical_Inheritance
+{
+	public static void main(String[] args)
+    {
+         Hierarchical_Inheritance2 obj_B = new Hierarchical_Inheritance2();
+         obj_B.print_A();
+         obj_B.print_B();
+ 
+         Hierarchical_Inheritance3 obj_C = new Hierarchical_Inheritance3();
+         obj_C.print_A();
+         obj_C.print_C();
+ 
+         Hierarchical_Inheritance4 obj_D = new Hierarchical_Inheritance4();
+         obj_D.print_A();
+         obj_D.print_D();
+    }
+    public void print_D() 
+    { 
+         System.out.println("Class D"); 
+    }
+}
+
