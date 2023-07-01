@@ -1,0 +1,49 @@
+//MULTILEVEL INHERITANCE
+
+package com.bharani;
+
+public class Multilevel_Inheritance 
+{
+	public void print_one()
+    {
+         System.out.println("Hi");
+    }
+}
+
+
+------------------------------------------------------------------------------
+
+
+package com.bharani;
+
+public class Multilevel_Inheritance2 extends Multilevel_Inheritance
+{
+	public void print_two() 
+    { 
+         System.out.println("Bharanidaran"); 
+    }
+}
+
+
+-------------------------------------------------------------------------------
+
+
+package com.bharani;
+
+public class Multilevel_Inheritance3 extends Multilevel_Inheritance2
+{
+
+	public static void main(String[] args) 
+	{
+		Multilevel_Inheritance3 g = new Multilevel_Inheritance3();
+        g.print_one();
+        g.print_two();
+        g.print_three();
+	}
+	public void print_three()
+    {
+         System.out.println("Rajabalan");
+    }
+
+}
+
