@@ -1,0 +1,64 @@
+//MULTIPLE INHERITANCE
+
+package com.bharani;
+
+public interface Multi_Inherit 
+{
+	public void print_one();
+}
+
+
+-------------------------------------------------------------------------------------------------
+
+
+package com.bharani;
+
+public interface Multi2_Inherit 
+{
+	public void print_two();
+}
+
+
+
+--------------------------------------------------------------------------------------------------
+
+
+package com.bharani;
+
+public interface Multi3_Inherit extends Multi_Inherit, Multi2_Inherit
+{
+	public void print_three();
+}
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+package com.bharani;
+
+public class Multi4_Inherit implements Multi3_Inherit
+{
+	public static void main(String[] args)
+    {
+         Multi4_Inherit c = new Multi4_Inherit();
+         c.print_one();
+         c.print_two();
+         c.print_three();
+    }
+    @Override 
+    public void print_one()
+    {
+         System.out.println("Hi!");
+    }
+ 
+    public void print_two()  
+    {
+         System.out.println("Bharanidaran"); 
+    }
+	@Override
+	public void print_three() 
+	{
+		System.out.println("Rajabalan");		
+	}
+}
+
