@@ -1,0 +1,23 @@
+//METHOD OVERLOADING
+
+
+package com.bharani;
+
+public class Addr_Method_Overload 
+{
+	public static void main(String[] args)
+    {  
+         System.out.println(Addr_Method_Overload .add(11,11));  
+         System.out.println(Addr_Method_Overload .add(11,11,11));  
+    }
+ 
+    static int add(int a,int b)
+    {
+         return a+b;
+    }  
+    static int add(int a,int b,int c)
+    {
+         return a+b+c;
+    }  
+}
+
