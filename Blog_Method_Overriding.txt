@@ -1,0 +1,34 @@
+//METHOD OVERRIDING
+
+package com.bharani;
+
+public class Vehicle_Method_Override 
+{
+	//defining a method  
+    void run() 
+    {
+         System.out.println("Vehicle is running");
+    }  
+}
+
+
+-----------------------------------------------------------------------------------
+
+
+package com.bharani;
+
+public class Bike_Method_Override extends Vehicle_Method_Override
+{
+	//defining the same method as in the parent class  
+    void run()
+    {
+         System.out.println("Bike is running safely");
+    }  
+ 
+    public static void main(String args[])
+    {  
+         Bike_Method_Override obj = new Bike_Method_Override();//creating object  
+         obj.run();//calling method  
+    }  
+}
+
