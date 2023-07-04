@@ -1,0 +1,27 @@
+public class LoopingDemo 
+{
+
+	public static void main(String[] args) 
+	{
+		LoopingDemo ld = new LoopingDemo();
+		ld.pattern6();
+	}
+	private void pattern6() 
+	{
+		  for(int row = 1; row<=9; row++)
+	       {
+	        if(row==1 || row==9)
+	        {
+	            for(int col = 1; col<=9; col++)
+	            {
+	                System.out.print("* "); 
+	            }
+	        }
+	        else
+	        {
+	            System.out.print("* "); 
+	        }
+	        System.out.println(); 
+	      }		
+	}
+}
