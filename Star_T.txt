@@ -1,0 +1,25 @@
+public class LoopingDemo 
+{
+
+	public static void main(String[] args) 
+	{
+		LoopingDemo ld = new LoopingDemo();
+		ld.pattern4();
+	}
+	private void pattern4() 
+	{
+		for(int star=1; star<=7; star++)
+	    {
+			System.out.print("* ");
+	    }
+	    System.out.println();
+	    for(int star=1; star<=6; star++)
+	    {
+	    	for(int space=1; space<=6; space++)
+	        {
+	    		System.out.print(" ");
+	        }
+	    	System.out.println("* ");
+	    }
+	}
+}
