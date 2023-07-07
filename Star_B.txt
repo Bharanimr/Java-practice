@@ -1,0 +1,45 @@
+public class Star_Alphabet 
+{
+
+	public static void main(String[] args) 
+	{
+		Star_Alphabet sa = new Star_Alphabet();
+		sa.pattern_B();
+	}
+
+    private void pattern_B() 
+	{
+		for (int line=1;line<=7;line++)
+	    {     
+	         for (int star=1;star<=7;star++)
+	         {
+	           if (line==1 || line==4 || line==7) 
+	           {
+	             if (star==6 || star==7 || star==5) 
+	             {
+	               System.out.print("");
+	             }
+	             else 
+	             {
+	               System.out.print("* ");
+	             }
+	           }
+	           else 
+	           {
+	             if (line==2 || line==3 || line==5 || line==6 || line==7) 
+	             {
+	               if (star==1||star==5) 
+	               {
+	                 System.out.print("* ");
+	               }
+	               else 
+	               {
+	                 System.out.print("  ");
+	               }
+	             }
+	           }
+	           }
+	           System.out.println();
+	    }
+	}
+}
