@@ -1,0 +1,31 @@
+public class Star_Alphabet 
+{
+
+	public static void main(String[] args) 
+	{
+		Star_Alphabet sa = new Star_Alphabet();
+		sa.pattern_H();
+	}
+
+    private void pattern_H() 
+	{
+		for(int line=1;line<=7;line++)
+		{
+			if(line<=7)
+			{
+				for(int star=1;star<=7;star++)
+				{
+					if(star==1 || star==7 || line==4)
+					{
+						System.out.print("* ");
+					}
+					else
+					{
+						System.out.print("  ");
+					}
+				}
+				System.out.println();
+			}
+		}
+	} 
+}
