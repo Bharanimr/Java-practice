@@ -1,0 +1,42 @@
+public class Star_Alphabet 
+{
+
+	public static void main(String[] args) 
+	{
+		Star_Alphabet sa = new Star_Alphabet();
+		sa.pattern_K();
+	}
+
+    private void pattern_K() 
+	    {
+		    for(int line=1;line<=11;line++)
+		    {
+			    for(int star=1;star<=7;star++)
+			    {
+				    if(line<=6)
+				    {
+					    if(star==1 || star==8-line)
+					    {
+						    System.out.print("* ");
+					    }
+					    else
+					    {
+						    System.out.print("  ");
+					    }
+				    }
+				    else
+				    {
+					    if(star==1 || star==line-4)
+					    {
+						    System.out.print("* ");
+					    }
+					    else
+					    {
+						    System.out.print("  ");
+					    }
+				    }
+			    }
+			    System.out.println();
+		    }
+	    }
+}
