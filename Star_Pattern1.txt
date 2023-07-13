@@ -1,0 +1,21 @@
+public class Pattern 
+{
+
+	public static void main(String[] args) 
+	{
+		Pattern pp = new Pattern();
+		pp.print_star();
+	}
+
+    private void print_star() 
+	{
+		for(int line=1; line<=5; line++)
+		{
+		    for(int star = 1; star<=5; star++)   //* * * * * 
+		    {                                    //* * * * *
+		    System.out.print("* "); 
+		    }
+		    System.out.println(); 
+		}
+	}
+}
