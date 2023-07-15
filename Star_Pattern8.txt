@@ -1,0 +1,21 @@
+public class Pattern 
+{
+
+	public static void main(String[] args) 
+	{
+		Pattern pp = new Pattern();
+		pp.print_number7();
+	}
+
+    private void print_number7() 
+	{
+		for(int num=5;num>=1;num--)
+		{
+			for(int no=5;no>=num;no--)
+			{
+				System.out.print(no+" ");	//5
+			}								//5	4	
+			System.out.println();
+		}
+	}
+}
