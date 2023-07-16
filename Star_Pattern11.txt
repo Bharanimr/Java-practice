@@ -1,0 +1,22 @@
+public class Pattern 
+{
+
+	public static void main(String[] args) 
+	{
+		Pattern pp = new Pattern();
+		pp.print_number10();
+	}
+
+    private void print_number10() 
+	{
+		for(int line = 5; line>=1; line--)
+		{
+		    for(int no=1; no<=line; no++)
+		    {
+		    System.out.print(no+" ");		//1	2	3	4	5	1
+		    }								//1	2	3	4	1	
+		    System.out.print(1+" "); 
+		System.out.println(); 
+		}		
+	}
+}
