@@ -1,0 +1,25 @@
+public class Pattern 
+{
+
+	public static void main(String[] args) 
+	{
+		Pattern pp = new Pattern();
+		pp.print_number15();
+	}
+
+    private void print_number15() 
+	{
+		for(int line = 5; line>=1; line--)
+		{
+		    for(int no=1; no<line; no++)
+		    {
+		    System.out.print(" ");		//                5
+		    }								//			5	4
+		    for(int no=1;no<=6-line;no++) 
+		    {
+		    	System.out.print(6-no +" "); 
+		    }
+		System.out.println(); 
+		}				
+	}
+}
