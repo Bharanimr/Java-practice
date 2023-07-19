@@ -1,0 +1,48 @@
+public class Pattern 
+{
+
+	public static void main(String[] args) 
+	{
+		Pattern pp = new Pattern();
+		pp.print_number19();
+	}
+
+    private void print_number19() 
+	{
+		 for(int line=1;line<=5;line++)
+		    {
+		      
+		      for(int space=1;space<=5-line;space++)
+		        System.out.print(" ");
+		      for(int star=1;star<=line;star++)
+		      {
+		        System.out.print("* ");
+		      }
+		      
+		      System.out.println();
+		      if(line==5)
+		      {
+		        for(int row=1;row<6;row++)
+		        {
+		          for(int col=1;col<6;col++)	//Diamond
+		            System.out.print("* ");
+		          System.out.println();
+		          
+		        }
+		      }
+		      
+		    }
+		    
+		      for(int line2=1;line2<=5;line2++)
+		      {
+		        for(int space2=1;space2<line2;space2++)
+		          System.out.print(" ");
+		        for(int star2=1;star2<=6-line2;star2++)
+		        {
+		          System.out.print("* ");
+		        }
+		        System.out.println();
+		      
+		    }
+	}
+}
