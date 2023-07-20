@@ -1,0 +1,28 @@
+public class Pattern 
+{
+
+	public static void main(String[] args) 
+	{
+		Pattern pp = new Pattern();
+		pp.print_number23();
+	}
+
+    private void print_number23() 
+	{
+		for(int line = 1; line <= 5; line++)	//Pascal Triangle
+	    {
+			for(int space=1;space<=5-line;space++)
+			{
+				System.out.print(" ");
+			}
+	        int C=1;
+	        for(int i = 1; i <= line; i++)
+	        {
+	        	System.out.print(C+" ");
+	            C = C * (line - i) / i; 	//Pascal Formula
+	        }
+	        System.out.println();
+	    }		
+	}
+}
+
