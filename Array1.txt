@@ -1,0 +1,50 @@
+public class ArrayLearning 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning al = new ArrayLearning();
+		al.lesson1();
+
+	}
+
+	private void lesson1() 
+	{
+		 char name[] = new char[6]; 
+		    name[0] = 'h'; 
+		    name[1] = 'a';
+		    name[2] = 'r';
+		    name[3] = 'i';
+		    name[4] = 's';
+		    name[5] = 'h'; 
+//		    System.out.println(name[0]);
+//		    System.out.println(name[1]);
+//		    System.out.println(name[2]);
+//		    System.out.println(name[3]);
+//		    System.out.println(name[4]);
+//		    System.out.println(name[5]);
+
+		    int i = 0; 
+		    while(i<name.length)
+		    {
+			    System.out.println(name[i]);
+			    i++;
+		    }
+
+		    char first = name[0]; 
+
+		    int len = name.length;
+
+		    char last = name[len-1];
+
+		    if(first == last)
+		    {
+		      System.out.println("Same");
+		    }
+		    else
+		    {
+		      System.out.println("Not Same");
+		    }	
+    }	
+}
