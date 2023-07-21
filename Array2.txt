@@ -1,0 +1,21 @@
+public class ArrayLearning 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning al = new ArrayLearning();
+		
+		char[] name = {'h','a','r','i','s','h'};
+		al.lesson2(name);
+		
+	}
+
+    private void lesson2(char[] name) 
+	{
+		for(int i=name.length-1;i>=0;i--)
+		{
+			System.out.println(name[i]);
+		}
+	}
+}
