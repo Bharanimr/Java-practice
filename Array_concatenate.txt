@@ -1,0 +1,36 @@
+public class ArrayLearning 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning al = new ArrayLearning();
+		
+		al.concatenate_array();
+		
+	}		
+
+	private void concatenate_array() 
+	{
+		int[] first = {90, 76, 87}; 
+		int[] second = {56, 98, 45}; 
+
+		int[] total = new int[first.length + second.length];
+		//int j=0;
+		for(int i=0; i<total.length; i++)
+		{
+		    if(i<first.length)
+		    {
+			    total[i] = first[i]; 
+			    System.out.println(total[i]); 
+		    }
+		    else
+		    {
+			    //total[i] = second[i];
+			    //j++;
+			    total[i] = second[i-first.length];
+			    System.out.println(total[i]); 
+		    }
+		}
+	}
+}
