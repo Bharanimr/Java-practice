@@ -1,0 +1,32 @@
+public class ArrayLearning 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning al = new ArrayLearning();
+		
+		al.find_expense();
+		
+	}	
+		
+    private void find_expense() 
+	{
+		int[] tour = {1000, 1500, 300, 450}; 
+
+		int[] trip = {343, 400};
+		int total = 0; 
+
+		for(int i=0; i<tour.length; i++)
+        {
+		    total = total + tour[i];		//3250
+        }
+
+		for(int i=0; i<trip.length; i++)
+        {
+		    total = total + trip[i];  		//3250 + 743 = 3993
+        }
+
+		System.out.println("Total Expenditure is "+ total);		
+	}
+}
