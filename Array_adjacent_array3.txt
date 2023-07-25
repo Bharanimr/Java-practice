@@ -1,0 +1,33 @@
+public class ArrayLearning2 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning2 al = new ArrayLearning2();
+		
+		al.adjacent_array3();
+			
+	}
+
+	private void adjacent_array3() 
+	{
+		int[] a = {3, 8, 5, 13};  
+         //        0  1  2   3
+		int i =0; 
+		while(i<a.length-1)
+		{
+			int start = a[i]<a[i+1]? a[i]:a[i+1];
+			int end = a[i]>a[i+1]? a[i]:a[i+1];
+        
+			for(int no = start+1; no<end; no++)
+			{
+				System.out.print(no+" "); 
+			}
+			System.out.println();
+			i++;
+       }		
+	}
+}
+
+
