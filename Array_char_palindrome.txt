@@ -1,0 +1,39 @@
+public class ArrayLearning2 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning2 al = new ArrayLearning2();
+		
+		char[] name= {'a','p','p','a'};
+		al.find_palindrome(name);
+			
+	}
+
+	private void find_palindrome(char[] name) 
+	{
+		int count = 0; 
+		int len = name.length-1; int i=0; 
+		while(i<len)
+		{
+			char first = name[i]; // a
+		    char last = name[len]; //a
+		    if(first == last)
+		    {
+		    	count++; 
+		    }
+		    else
+			{
+				System.out.println("Not Palindrome");
+				break;
+			}		
+		    i++;
+		    len--; 
+		}
+		if(count == name.length/2)
+		{
+			System.out.println("Palindrome");
+		}
+	}
+}
