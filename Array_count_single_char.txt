@@ -1,0 +1,27 @@
+public class ArrayLearning2 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning2 al = new ArrayLearning2();
+		
+		char[] name= {'v','a','r','a','d','h','a','n'};
+		al.find_count_a(name);
+			
+	}
+
+	private void find_count_a(char[] name) 
+	{
+		char ch = 'a';    //name[0]
+		int count = 0; 
+		for(int i=0; i<name.length;i++)
+		{
+			if(ch==name[i])
+			{
+				count++; 
+		    }
+		}
+		System.out.println("Count of a is "+ count);		
+	}
+}
