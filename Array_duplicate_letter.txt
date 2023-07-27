@@ -1,0 +1,35 @@
+public class ArrayLearning3 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning3 al = new ArrayLearning3();
+		
+		al.remove_duplicate_letter();
+			
+	}
+
+	private void remove_duplicate_letter() 
+	{
+		char[] name = {'b','h','a','r','a','n','i','d','a','r','a','n'};
+	    for( int j =0; j<name.length;j++)
+	    {
+	    	char ch = name[j]; 
+	    	if(ch!='*')
+	    	{
+	    		int count = 1; 
+	    		for(int i=j+1; i<name.length;i++)
+	    		{
+	    			if(ch == name[i])
+	    			{
+	    				name[i] = '*';
+	    				count++;
+	    			}
+	    		}
+	    		if(count==1)     
+	    			System.out.println(ch + " appears "+ count + " time(s)");  
+	    	}
+	    }		
+	}
+}
