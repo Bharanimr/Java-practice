@@ -1,0 +1,35 @@
+public class ArrayLearning2 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning2 al = new ArrayLearning2();
+		
+		al.find_first_repeated_element3();
+			
+	}
+
+	private void find_first_repeated_element3() 
+	{
+		 char[] name = {'b','h','a','r','a','n','i','d','a','r','a','n'}; 
+		    boolean repeated = false; 
+		    for(int j = 1; j<name.length-1;j++)
+		    {
+		    char ch = name[j]; 
+		    for(int i=j+1; i<name.length;i++)
+		        {
+		          if(ch == name[i])
+		          {
+		            System.out.println("First repeated character is "+ ch);
+		            repeated = true; 
+		            break; 
+		          }
+		        }
+		    if(repeated == true)
+		      break;
+		    }
+	}
+}
+	
+
