@@ -1,0 +1,35 @@
+public class SortingDemo 
+{
+
+	public static void main(String[] args) 
+	{
+
+		SortingDemo sd = new SortingDemo();
+		
+		int[] ar = { 10, 8, 5, 1};
+		sd.bubble_sort(ar);
+		
+	}
+
+	private void bubble_sort(int[] ar) 
+	{
+		for(int j = 1; j<ar.length; j++)
+		{
+			for(int i=0; i<ar.length-j; i++)
+		    {
+				if(ar[i]>ar[i+1])
+		        {
+					int temp = ar[i];
+					ar[i] = ar[i+1];
+					ar[i+1] = temp;
+		        }
+		    }
+		}  //return ar;
+		System.out.print("[ ");
+		for(int i=0; i<ar.length;i++)
+		{
+			System.out.print(ar[i]+ " | ");
+		}
+		System.out.print("] ");		
+	}
+}
