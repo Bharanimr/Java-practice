@@ -1,0 +1,26 @@
+public class ArrayLearning2 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning2 al = new ArrayLearning2();
+		
+		al.odd_index_total();
+			
+	}
+
+	private void odd_index_total() 
+	{
+		//4) Finding addition of odd index numbers in a given array
+		int[] ar ={ 10,20,30,40,50,60};
+	            //   0  1  2  3  4  5
+
+		int total = 0; 
+		for(int i = 1; i<ar.length; i+=2)
+	    {
+			total+=ar[i];   //total = total + ar[i];
+	    }
+		System.out.println(total); 
+	}
+}
