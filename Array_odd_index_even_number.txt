@@ -1,0 +1,31 @@
+public class ArrayLearning3 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning3 al = new ArrayLearning3();
+		
+		al.odd_index_even_number();
+			
+	}
+
+	private void odd_index_even_number() 
+	{
+		int[] ar = {10,20,30,41,50};
+			//		 0  1  2  3  4
+		boolean repeat = false;
+		for(int i=1;i<ar.length;i+=2)
+		{
+			if(ar[i]%2==0)
+			{
+				System.out.println("Odd Index Even Number is " +ar[i]);
+				repeat = true;
+			}
+		}
+		if(repeat == false)
+		{
+			System.out.println("Not found");
+		}
+	}
+}
