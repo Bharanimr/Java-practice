@@ -1,0 +1,39 @@
+public class ArrayLearning3 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning3 al = new ArrayLearning3();
+		
+		al.find_perfect_number();
+
+	}
+
+	private void find_perfect_number() 
+	{
+		int[] ar= {6,2,28,5};
+		boolean result=false;
+		
+		for(int i=0;i<ar.length;i++)
+		{
+			int total=0;
+			for(int div=1;div<ar[i];div++)
+			{
+				if(ar[i]%div==0)
+				{
+					total=total+div;
+					if(total==ar[i])
+					{
+						System.out.println("Perfect Number "+ar[i]);
+						result=true;
+					}
+				}
+			}
+		}
+		if(result==false)
+		{
+			System.out.println("No Perfect Number");
+		}	
+	}
+}
