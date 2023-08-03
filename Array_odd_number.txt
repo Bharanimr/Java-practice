@@ -1,0 +1,23 @@
+public class ArrayLearning2 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning2 al = new ArrayLearning2();
+		
+		al.odd_number();
+			
+	}
+
+	private void odd_number() 
+	{
+		//PRINTING ONLY ODD ELEMENTS: 
+		int[] a = {10,20,30, 15, 25, 35}; 
+		for(int i =0; i<a.length; i++)
+		{
+			if(a[i]%2!=0)
+			System.out.println(a[i]); 
+		}		
+	}
+}
