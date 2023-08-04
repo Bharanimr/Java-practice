@@ -1,0 +1,36 @@
+public class ArrayLearning3 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning3 al = new ArrayLearning3();
+   
+	    for(int i=0;i<ar.length;i++)
+	    {
+	      al.find_prime_number(ar[i]);
+	    }
+			
+	}
+
+	private void find_prime_number(int no) 
+	{
+		int div=2;    
+		boolean result=false;
+		    
+		while(div<=no/2) 
+		{
+			if(no%div==0)
+		    {
+				System.out.println("Not Prime "+no);
+		        result=true;
+		        break;  
+		    }
+		    div++;
+		}
+		if(result==false)
+		{
+			System.out.println("Prime "+no);  
+		}
+	}
+}
