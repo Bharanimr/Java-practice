@@ -1,0 +1,34 @@
+public class ArrayLearning2 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning2 al = new ArrayLearning2();
+		
+		al.find_second_biggest();
+			
+	}
+
+	private void find_second_biggest() 
+	{
+	    int[] ar = {5, 8, 30, 11};
+	    int big = ar[0];
+	    int second_big = ar[0];
+	    
+	    for(int i=1;i<ar.length;i++ )
+	    {
+	    	if(ar[i]>big)
+	    	{
+	    		second_big = big; 
+	    		big = ar[i];
+	    	}
+	    	else if(ar[i]>second_big)
+	    	{
+	    		second_big = ar[i]; 
+	    	}
+	    }
+	    System.out.println("Biggest is "+ big);
+	    System.out.println("Second Biggest is "+ second_big);
+	}
+}
