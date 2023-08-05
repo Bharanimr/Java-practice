@@ -1,0 +1,51 @@
+public class ArrayLearning2 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayLearning2 al = new ArrayLearning2();
+		
+		al.split_odd_even_array();
+			
+	}
+
+	private void split_odd_even_array() 
+	{
+		int[] a = {10, 20, 30, 15, 25, 35}; 
+	    int count = 0; 
+	    int count1=0;
+	    
+	    for(int i =0; i<a.length; i++)
+	    {
+	    	if(a[i]%2!=0)
+	        {
+	    		count++; 
+	        }
+	        else
+	        {
+	        	count1++;
+	        }
+	    }
+	    int j = 0; 
+	    int[] b = new int[count]; 
+	    int[] c = new int[count1]; 
+	    int k = 0; 
+	     
+	    for(int i =0; i<a.length; i++)
+	    {
+	    	if(a[i]%2!=0)
+	        {
+	    		b[j] = a[i]; 
+	            System.out.println("The odd array " +b[j]);
+	            j++; 
+	        }
+	        else
+	        {
+	        	c[k] = a[i];
+	        	System.out.println("The even array " +c[k]);
+	        	k++; 
+	        }
+	    }
+	}
+}
