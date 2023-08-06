@@ -1,0 +1,32 @@
+public class StringLearning1 
+{
+
+	public static void main(String[] args) 
+	{
+
+		StringLearning1 sd = new StringLearning1(); 
+		
+		sd.odd_case_change2();
+
+	}
+
+	private void odd_case_change2() 
+	{
+
+		String name = "bharani";
+
+		for(int i=0;i<name.length();i++)
+		{
+
+			if(i%2!=0)
+			{
+				System.out.print((char)(name.charAt(i)-32));
+			}
+
+			else
+			{
+				System.out.print(name.charAt(i));
+			}
+		}
+	}
+}
