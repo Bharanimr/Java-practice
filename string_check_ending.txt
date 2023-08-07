@@ -1,0 +1,41 @@
+public class StringLearning1 
+{
+	
+	public static void main(String[] args) 
+	{
+
+		StringLearning1 sd = new StringLearning1(); 
+		
+		sd.check_ending("kalaiarasan","arasan" );
+
+	}
+
+	private void check_ending(String s1, String s2) 
+	{
+
+		int len1 = s1.length();
+		int len2 = s2.length();
+		int count = 0; 
+
+		for(int i=1; i<=s2.length();i++) 
+		{
+
+			if(s2.charAt(len2-i) == s1.charAt(len1-i))
+			{
+				count++; 
+				continue; 
+			}
+
+			else
+			{
+				System.out.println("Not ends with");
+				break;
+			}
+		}
+
+		if(count == s2.length())
+		{
+			System.out.println("Yes, ends with ");
+		}	
+	}
+}
