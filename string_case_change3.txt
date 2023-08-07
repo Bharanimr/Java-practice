@@ -1,0 +1,32 @@
+public class StringLearning1 
+{
+
+	public static void main(String[] args) 
+	{
+
+		StringLearning1 sd = new StringLearning1(); 
+		
+		sd.case_change3();
+
+	}
+
+	private void case_change3() 
+	{
+
+		String name = "bharani daran";
+		
+		for(int i=0;i<name.length();i++)
+		{
+
+			if(i==0 || name.charAt(i-1)==' ')
+			{
+				System.out.print((char)(name.charAt(i)-32));
+			}
+
+			else
+			{
+				System.out.print(name.charAt(i));
+			}
+		}
+	}
+}
