@@ -1,0 +1,34 @@
+public class StringLearning1 
+{
+	
+	public static void main(String[] args) 
+	{
+
+		StringLearning1 sd = new StringLearning1(); 
+
+		sd.first(); 
+		
+	}
+
+	private void first() 
+	{		
+
+		String name = "balaji";
+		System.out.println(name.length()); 
+
+		char ch = name.charAt(0);
+		System.out.println(ch);
+
+		ch = name.charAt(1);
+		System.out.println(ch);
+
+		ch = name.charAt(2);
+		System.out.println(ch);
+		
+		System.out.println(name.contains("ki"));
+		
+		System.out.println(name.endsWith("ji")); 
+		
+		System.out.println(name.startsWith("bala")); 
+	}
+}
