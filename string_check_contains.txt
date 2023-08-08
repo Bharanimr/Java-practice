@@ -1,0 +1,49 @@
+public class StringLearning2 
+{
+
+	public static void main(String[] args) 
+	{
+
+		StringLearning2 sd = new StringLearning2();
+		
+		sd.check_contains();
+
+	}
+
+	private void check_contains() 
+	{
+
+		String s1 = "abcd";
+	    String s2 = "cd"; 
+
+	    int i = 0;
+
+	    for(int j = 0; j<s1.length(); j++)      //j = 1
+	    {
+
+	    	if(s2.charAt(i) == s1.charAt(j))    //b == b
+	        {
+
+	    		if(i == j)
+	    		{
+	    			i++; 
+	    		}
+
+	    		if(i==s2.length())
+	    		{
+	    			break;
+	    		}
+	        }
+	    }
+
+	    if(i==s2.length())
+	    {
+	    	System.out.println("yes contains"); 
+	    }
+ 
+	    else
+	    {
+	    	System.out.println("No, does not contain"); 
+	    }		
+	}
+}
