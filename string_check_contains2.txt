@@ -1,0 +1,49 @@
+public class StringLearning2 
+{
+
+	public static void main(String[] args) 
+	{
+
+		StringLearning2 sd = new StringLearning2();
+
+		sd.check_contains2();
+	}
+
+    private void check_contains2() 
+	{
+
+	    String s1 = "kashmir delhi chennai";
+	    String s2 = "trichy";
+
+		int count = 0; 
+
+		for(int i=0;i<s1.length(); i++)
+		{
+
+		    if(s2.charAt(0) == s1.charAt(i))
+		    {
+		      
+		        for(int j=0; j<s2.length();j++)
+		        {
+
+		            if(s2.charAt(j) == s1.charAt(i))
+		            {
+		                i++; count++; 
+		            }
+
+		            if(count == s2.length())
+		            {
+		                System.out.println("yes, it contains");
+		                break;
+		            }
+		        }
+		    }
+        }  
+
+		if(count<s2.length())
+		{
+		    System.out.println("Does not contain");
+		}		
+	}
+}
+
