@@ -1,0 +1,32 @@
+public class StringLearning3 
+{
+
+	String name;
+
+	public StringLearning3(String name) 
+	{
+
+		this.name = name;
+
+	}
+
+	public static void main(String[] args) 
+	{
+
+		String name = new String("poovarasan");
+		System.out.println(name); 
+		System.out.println(name.hashCode());
+		    
+		StringLearning3 mf = new StringLearning3("danny");
+		System.out.println(mf);
+		System.out.println(mf.hashCode());
+
+	}
+
+    public String toString()	//Textual representation
+    {
+
+	    return this.name;//"hello";
+
+	}
+}
