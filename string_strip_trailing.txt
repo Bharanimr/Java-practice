@@ -1,0 +1,49 @@
+public class StringLearning1 
+{
+	
+	public static void main(String[] args) 
+	{
+
+		StringLearning1 sd = new StringLearning1(); 
+		
+		strip_trailing();
+	}
+
+	private static void strip_trailing() 
+	{
+		String s = "h ello   ";
+
+		boolean first_letter = false;       //false
+
+		String output = ""; 
+
+		for(int i=s.length()-1;i>=0;i--)
+		{
+
+			if(s.charAt(i)!=' ') 
+			{
+				output = output + s.charAt(i); 
+				first_letter = true;  //true
+		    }
+
+		    else if(first_letter==true)
+		    {
+		    	output = output + s.charAt(i);
+		    }
+		}
+
+		System.out.println("Given string : " +s);
+
+		System.out.println("Reverse string : " +output);			//olle h
+		
+		String result="";
+
+		for(int i=output.length()-1;i>=0;i--)
+		{
+			result = result + output.charAt(i);
+		}
+
+		System.out.println("Strip Trailing : " +result);
+	}		
+
+}
