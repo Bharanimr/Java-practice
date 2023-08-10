@@ -1,0 +1,38 @@
+public class TwoDimensionalArray 
+{
+
+	public static void main(String[] args) 
+	{
+
+		TwoDimensionalArray tda = new TwoDimensionalArray();
+		
+		tda.two_d_array();
+
+	}
+
+	private void two_d_array() 
+	{
+		//--------------------- Two Dimensional Array -------------------------
+
+		int[] quarterly = {50, 56, 60, 35, 42};
+	    int[] half  	= {60, 36, 50, 85, 92};
+	    int[] annual    = {51, 58, 68, 45, 62};
+	    
+	    int[][] marks = {quarterly, half, annual};
+	    
+	    System.out.println("Length of given array :" +marks.length);
+	    
+	    for(int exam = 0; exam<marks.length; exam++)
+	    {
+
+	    	for(int sub =0;sub<marks[exam].length;sub++)
+	    	{
+
+	    		System.out.print(marks[exam][sub]+" ");
+
+	    	}
+
+	    System.out.println();		
+	    }
+	}
+}
