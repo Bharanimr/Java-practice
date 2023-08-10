@@ -1,0 +1,45 @@
+public class TwoDimensionalArray2 
+{
+
+	public static void main(String[] args) 
+	{
+
+		TwoDimensionalArray2 tda = new TwoDimensionalArray2();
+		
+		tda.two_d_array_matrix_add();
+		
+		
+	}
+
+	private void two_d_array_matrix_add() 
+	{
+		int[][] a = {
+		          		{10,20,30},
+		          		{40,50,60}, 
+		          		{70,80, 90}
+		          	};
+
+		int[][] b = {
+		   				{90,80,70},
+		   				{60,50,40}, 
+		   				{30,20,10}
+		   			};
+		    
+		int[][] c = new int[3][3];
+		    
+		for(int row = 0;row<c.length; row++) 
+		{
+
+		   	for(int col=0; col<3; col++)
+		   	{
+
+		   		c[row][col] = a[row][col]+b[row][col];
+
+		   		System.out.print(c[row][col]+" ");
+
+		   	}
+
+		   	System.out.println();
+		}		
+	}
+}
