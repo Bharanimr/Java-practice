@@ -1,0 +1,35 @@
+public class TwoDimensionalArray 
+{
+
+	public static void main(String[] args) 
+	{
+
+		TwoDimensionalArray tda = new TwoDimensionalArray();
+		
+		tda.two_d_cross3();
+		
+	}
+
+	private void two_d_cross3() 
+	{
+
+		int[][] a = {
+						{10,20,30},
+						{40,50,60},
+						{70,80,90}
+					};
+
+		for(int row=0; row<a.length; row++)
+		{
+
+			for(int col=0;col<a[row].length;col++)
+			{
+
+				if(col==0)
+				{
+					System.out.println(a[row][col]);
+				}
+			}
+		}
+	}
+}
