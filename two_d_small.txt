@@ -1,0 +1,44 @@
+public class TwoDimensionalArray 
+{
+
+	public static void main(String[] args) 
+	{
+
+		TwoDimensionalArray tda = new TwoDimensionalArray();
+		
+		tda.two_d_small();
+		
+	}
+
+	private void two_d_small() 
+	{
+
+		int[][] marks = {
+    						{50,56, 58, 52, 40}, 
+    						{60,36, 50},
+    						{51,58, 68, 45}
+    					};
+
+		System.out.println("Length of given array :" +marks.length);
+
+		for(int exam = 0; exam<marks.length; exam++)
+		{
+
+			int small = Integer.MAX_VALUE; 
+
+			for(int sub =0;sub<marks[exam].length;sub++)
+			{
+
+				System.out.print(marks[exam][sub]+" ");
+
+				if(marks[exam][sub]<small)
+				{
+					small = marks[exam][sub];
+				}
+			}
+
+			System.out.println();
+			System.out.println("Smallest of given array is :" +small);
+		}
+	}
+}
