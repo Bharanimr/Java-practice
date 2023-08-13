@@ -1,0 +1,41 @@
+public class TwoDimensionalArray 
+{
+
+	public static void main(String[] args) 
+	{
+
+		TwoDimensionalArray tda = new TwoDimensionalArray();
+		
+		tda.two_d_total();
+		
+	}
+
+	private void two_d_total() 
+	{
+
+		int[][] marks = {
+	            			{50,56, 58, 52, 40}, 
+	            			{60,36, 50},
+	            			{51,58, 68, 45}
+	            		};
+		
+	    System.out.println("Length of given array :" +marks.length);
+	    
+	    for(int exam = 0; exam<marks.length; exam++)
+	    {
+
+	      int total = 0;
+
+	      for(int sub =0;sub<marks[exam].length;sub++)
+	      {
+
+	    	  System.out.print(marks[exam][sub]+" ");
+	    	  total+= marks[exam][sub];
+
+	      }
+
+	      System.out.println();
+	      System.out.println("Total is :" +total);
+	    }		
+	}
+}
