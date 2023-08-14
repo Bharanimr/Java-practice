@@ -1,0 +1,59 @@
+public class CompareToDemo2 implements Comparable
+{
+
+	int price; 
+
+	CompareToDemo2(int price)
+	{
+		this.price = price; 
+	}
+
+	public static void main(String[] args) 
+	{
+
+		CompareToDemo2 l1 = new CompareToDemo2(25000);
+		CompareToDemo2 l2 = new CompareToDemo2(35000);
+
+		int result = l1.compareTo(l2);
+		System.out.println("Result is " + result);
+
+		if(result>0)
+		{
+			System.out.println("First Laptop is expensive");
+		}
+
+		else if(result<0)
+		{
+			System.out.println("Second Laptop is expensive");
+		}
+
+		else
+		{
+			System.out.println("Both laptops have same price");
+		}
+		   
+	}
+		  
+	@Override   //annotation  -- Meta Data
+	public int compareTo(Object o) 
+	{
+
+		int price1 = this.price;
+
+		CompareToDemo2 ll = (CompareToDemo2) o;
+
+		int price2 = ll.price;
+
+		if(price1>price2)
+        {
+			return +1000;
+        }
+
+		else if(price1 < price2)
+        {
+		    return -9999;
+        }   
+		return 0;
+	}
+
+}
