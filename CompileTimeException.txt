@@ -1,0 +1,27 @@
+import java.io.FileNotFoundException;
+
+public class CompileTimeException 
+{
+
+	public static void main(String[] args) throws FileNotFoundException 
+	{
+
+		CompileTimeException d = new CompileTimeException(); 
+
+		d.divide(100, 20);
+
+	}
+	
+	public void divide(int no1, int no2) throws FileNotFoundException
+	{
+
+		System.out.println(no1/no2);
+		
+		int[] ar = new int[no1];
+		
+		for(int i=0; i<10;i++)
+		{
+			System.out.println(ar[i]);
+		}
+	}
+}
