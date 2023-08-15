@@ -1,0 +1,33 @@
+import java.io.File;
+
+public class FileDemo2 
+{
+
+	public static void main(String[] args) 
+	{
+
+		FileDemo2 fd = new FileDemo2();
+
+		fd.file_folder_demo();
+
+	}
+
+	private void file_folder_demo() 
+	{
+
+		File ff = new File("//home//bharanidaran//Desktop");
+		
+		String[] files_folders = ff.list();
+		
+		for(int i=0; i<files_folders.length;i++)
+		{
+
+		  String st = files_folders[i];
+		  
+		  if(st.endsWith(".txt") )
+		  {
+		    System.out.println(st);
+		  }
+		}		
+	}
+}
