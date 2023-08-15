@@ -1,0 +1,38 @@
+import java.io.File;
+
+public class FileDemo1 
+{
+
+	public static void main(String[] args) 
+	{
+
+		FileDemo1 fd = new FileDemo1();
+
+		fd.read_write_demo();
+
+	}
+
+	private void read_write_demo() 
+	{
+
+		File ff = new File("//home//bharanidaran//Desktop");
+		
+		String[] files_folders = ff.list();
+		
+		for(int i=0; i<files_folders.length;i++)
+		{
+
+			String st = files_folders[i];
+
+			if(st.equals("Jailer.txt"))
+			{
+				System.out.println("Yes Present");
+			}
+
+			else
+			{
+				System.out.println("Not present");
+			}
+		}		
+	}
+}
