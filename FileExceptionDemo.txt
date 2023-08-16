@@ -1,0 +1,53 @@
+import java.io.File;
+import java.io.IOException;
+
+public class FileExceptionDemo 
+{
+
+	public static void main(String[] args) 
+	{
+
+		FileExceptionDemo fe = new FileExceptionDemo();
+
+		fe.learn_file();
+
+	}
+	
+	private void learn_file() 
+	{
+
+//	    File ff = new File("/home/bharanidaran/Desktop/bhar");
+	    
+		// ---- For file exists or not ---- //
+		
+//	    System.out.println(ff.exists());
+	    
+		// ---- For file delete ---- //
+		
+//	    System.out.println(ff.delete());
+	    
+		// ---- For create a folder ---- //
+		
+//	    ff.mkdir();
+//	    System.out.println(ff.mkdir());
+	    
+		// ---- For create sub-folders ---- //
+		
+	    File ff = new File("/home/bharanidaran/Desktop/Leader/Gandhi");
+	    System.out.println(ff.mkdirs());
+	    
+//	    try 
+//	    {
+//	    	// For file creation only we use try block otherwise we don't use //
+//	    
+//	        ff.createNewFile();
+//	        ff.delete();
+//      
+//	    } 
+	    
+//	    catch (IOException e) 
+//	    {
+//	        e.printStackTrace();
+//		} 
+    }
+}
