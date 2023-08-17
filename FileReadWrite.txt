@@ -1,0 +1,52 @@
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileReadWrite 
+{
+
+	public static void main(String[] args) 
+	{
+
+		FileReadWrite frw = new FileReadWrite();
+		frw.write();
+		
+	}
+
+	private void write() 
+	{
+
+		File ff = new File("/home/bharanidaran/Desktop/Mohan.txt");
+		
+		//System.out.println(ff.getAbsolutePath());  // Location path
+		
+		try 
+		{
+
+			ff.createNewFile();
+			
+			FileWriter writer = new FileWriter(ff);
+			//writer.append('R');
+			//writer.append(" Mohanaprasath\n");
+			//writer.append(" Rajabalan");
+			//writer.close();
+			
+			BufferedWriter bufwriter = new BufferedWriter(writer);
+			bufwriter.append(" Saravana");
+			bufwriter.newLine();
+			
+			bufwriter.append(" Varun");
+			bufwriter.append(" Vishnu");
+			
+			bufwriter.flush();
+			bufwriter.close();
+			
+		}
+		
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		}	
+	}
+}
