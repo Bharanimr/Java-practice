@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class ParrentException 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ParrentException ne = new ParrentException();
+
+		ne.divisor();
+
+		System.out.println("Catch Me");
+
+	}
+
+	private void divisor() 
+	{
+
+		Scanner sc = new Scanner(System.in);
+	    System.out.println("Enter two numbers ");
+	    
+	    
+	    try 
+	    {
+
+	    	int no1 = sc.nextInt();
+		    int no2 = sc.nextInt();
+		    
+	    	System.out.println(no1/no2);
+	    	int[] ar = new int[no2];
+
+	    	for(int i=0; i<ar.length; i++)
+	    	{
+	    		System.out.println(ar[i]);
+	    	}
+	      
+	    }
+	    
+	    catch(ArithmeticException ae)
+	    {
+	    	System.out.println("Check Divisor.");
+	    }
+	    
+	    catch(NegativeArraySizeException nnn)
+	    {
+	    	System.out.println("Array size should not be negative");
+	    }		
+	    
+	    catch(Exception e)
+	    {
+	        System.out.println("Something went wrong");
+	    }
+	    
+	    finally
+	    {
+	        System.out.println("DB Connected ");
+	        System.out.println("Disconnecting DB");
+	    }
+	}
+}
