@@ -1,0 +1,28 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegularExpressionDemo4 
+{
+
+	public static void main(String[] args) 
+	{
+
+		String password = "Chennai :-600001";
+		
+		//-- Show only characters --//
+//	    Pattern patternObj = Pattern.compile("[a-zA-Z]");
+		
+		//-- Remove all special characters -- // 
+//	    Pattern patternObj = Pattern.compile("[a-z A-Z 0-9]");
+	    
+		//-- Show only special characters --//
+		Pattern patternObj = Pattern.compile("[^a-z A-Z 0-9]");
+	    
+	    Matcher matcherObj = patternObj.matcher(password);
+	    
+	    while(matcherObj.find())
+	    {
+	    	System.out.print(matcherObj.group());
+	    }
+	}
+}
