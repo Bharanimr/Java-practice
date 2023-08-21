@@ -1,0 +1,44 @@
+public class Equals_Method2 
+{
+
+	int price; 
+
+	public Equals_Method2(int price)
+	{
+
+		this.price = price;
+ 
+	}
+
+	public static void main(String[] args) 
+	{
+
+		Equals_Method2 lap1 = new Equals_Method2(30000);
+
+		Equals_Method2 lap2 = new Equals_Method2(30000);
+
+	    System.out.println(lap1.equals(lap2));
+
+	    System.out.println(lap1.hashCode());
+	    System.out.println(lap2.hashCode());
+	  }
+
+	  public boolean equals(Object oo)
+	  {
+
+		  Equals_Method2 ll = (Equals_Method2)oo;
+
+		  if (this.hashCode() == ll.hashCode())
+			  return true; 
+
+		  return false;
+
+	  }
+
+	  public int hashCode()
+	  {
+
+		  return -123;
+
+	  }
+}
