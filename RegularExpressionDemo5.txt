@@ -1,0 +1,24 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegularExpressionDemo5 
+{
+
+	public static void main(String[] args) 
+	{
+
+//		String mobile = "9884012810";
+//		Pattern patternObj = Pattern.compile("(0|91)?[0-9]{9}");
+//		Matcher matcherObj = patternObj.matcher(mobile);
+		
+		String pattern = "a*";
+	    String input = "fafafafaffaaffaafafafafa";
+	    Pattern patternObj = Pattern.compile(pattern);
+	    Matcher matcherObj =  patternObj.matcher(input);
+	      
+		while(matcherObj.find())
+		{
+			System.out.print(matcherObj.group());
+		}
+	}
+}
