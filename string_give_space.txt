@@ -1,0 +1,39 @@
+public class StringLearning1 
+{
+	
+	public static void main(String[] args) 
+	{
+
+		StringLearning1 sd = new StringLearning1(); 
+		
+		sd.give_space("MonTuesWednesThursFri");
+
+	}
+
+	private void give_space(String s1)      	//MonTuesWednesThursFri
+	{ 
+		for(int i=0; i<s1.length();i++)
+		{
+
+			if(s1.charAt(i)>='A' && (s1.charAt(i)<='Z'))
+			{
+				//System.out.print();
+
+				if(i!=0)
+				{
+					System.out.print("day "+s1.charAt(i));
+				}
+
+				else
+				{
+					System.out.print(s1.charAt(i));         //Monday T
+				}
+			}
+
+			else
+			{
+				System.out.print(s1.charAt(i));
+			}
+		}	
+	}
+}
