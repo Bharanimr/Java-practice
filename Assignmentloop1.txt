@@ -1,0 +1,31 @@
+// Print only 1 in a loop
+
+public class Assignmentloop
+{
+
+	public static void main(String[] args) 
+	{
+
+		Assignmentloop aa = new Assignmentloop();
+		
+		aa.print_one();
+		 
+	}
+	
+	private void print_one() 
+	{
+
+		// 1 11 111 1111
+
+	    for(int i=0;i<5;i++)
+	    {
+
+	    	for(int j=0;j<=i;j++)
+	    	{
+	    		System.out.print(1);
+	    	}
+
+	    	System.out.print(" ");
+	    }		
+	}
+}
