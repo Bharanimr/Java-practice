@@ -1,0 +1,36 @@
+// Print the 5 series and also 4 series in a single loop
+
+public class Assignmentloop
+{
+
+	public static void main(String[] args) 
+	{
+
+		Assignmentloop aa = new Assignmentloop();
+		
+		aa.print_two();
+		 
+	}
+
+	private void print_two() 
+	{
+
+		//	5	10	15	20	25
+		//	4	8	12	16	20
+
+		boolean first=true;
+	    int no1=5;
+	     
+	    for(int i=1; i<=5; i++) 
+	    {
+	    	System.out.print(i*no1+" ");
+	       
+	        if(i==5 && first==true)
+	        {
+	        	no1=4;
+	        	i=0;
+	        	first=false;
+	        }
+	     }
+	}
+}
