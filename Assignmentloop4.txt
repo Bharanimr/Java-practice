@@ -1,0 +1,27 @@
+// Print the 2 square and the power will increases
+
+public class Assignmentloop
+{
+
+	public static void main(String[] args) 
+	{
+
+		Assignmentloop aa = new Assignmentloop();
+	
+		aa.print_four();
+		 
+	}
+
+	private void print_four()
+	{
+		 int no= 2;
+		    
+		 int result =2;
+		    
+		 for(int i=2;i<=5;i++)
+		 {
+			 result=result*no;
+		     System.out.println("2^"+i+" = "+result);
+		 }
+	}
+}
