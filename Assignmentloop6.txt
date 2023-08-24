@@ -1,0 +1,29 @@
+//Print the 5 power 4 and 4 power 3
+
+public class Assignmentloop
+{
+
+	public static void main(String[] args) 
+	{
+
+		Assignmentloop aa = new Assignmentloop();
+		
+		aa.print_six();
+		 
+	}
+
+	private void print_six()
+	{
+
+		 for(int i=5;i>=3;i--)
+		 {
+			 int result = 1;
+		      
+		     for(int j=i-1;j>=1;j--)
+		     {
+		    	 result = result*i;  
+		     }
+		     System.out.println(result);  
+		 }  
+	}
+}
