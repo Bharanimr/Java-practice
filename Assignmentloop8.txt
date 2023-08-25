@@ -1,0 +1,49 @@
+// Split the given number and print Greater or not
+
+public class Assignmentloop
+{
+
+	public static void main(String[] args) 
+	{
+		Assignmentloop aa = new Assignmentloop();
+		
+		aa.print_eight();
+		 
+	}
+
+	private void print_eight()
+	{
+			
+		int no = 1234;
+		
+		boolean result = false;
+		
+		int predigit = no%10;
+		
+		no = no/10;
+		
+		while(no>0)
+		{
+			int curdigit = no%10;
+			
+			if(curdigit>predigit)
+			{
+				System.out.println("Not ascending");
+				result = false;
+				break;
+				
+			}
+			else
+			{
+				predigit=curdigit;
+				no = no/10;
+				result = true;
+			}
+			
+		}
+		if(result == true)
+		{
+			System.out.println("It maintain ascending order");
+		}
+	}
+}
