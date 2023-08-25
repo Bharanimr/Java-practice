@@ -1,0 +1,44 @@
+//Print the 100's divisor and find the prime numbers
+
+public class Assignmentloop
+{
+
+	public static void main(String[] args) 
+	{
+
+		Assignmentloop aa = new Assignmentloop();
+
+		aa.print_nine();
+
+	}
+
+	private void print_nine()
+	{
+
+		int no=100;
+	    int div=2;
+	    
+	    while(div<=no/2)
+	    {
+	      if(no%div==0)
+	      {
+	          int count=0;
+	          for(int i=2;i<=div/2;i++)
+	          {      
+	            if(div%i==0)
+	            {
+	              System.out.println(div+" is  not prime number"); 
+	              count=1;
+	              break;      
+	            }  
+	          }
+	          if(count==0)  
+	          { 
+	        	  System.out.println(div+" is prime number"); 
+	          }  
+	      }
+	      div++;
+	    
+	    }
+	}
+}
