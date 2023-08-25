@@ -1,0 +1,26 @@
+// Print only 5 series within 100
+
+public class Assignmentloop
+{
+
+	public static void main(String[] args) 
+	{
+
+		Assignmentloop aa = new Assignmentloop();
+		
+		aa.print_seven();
+		 
+	}
+
+	private void print_seven()
+	{
+
+		for (int no = 1; no<= 100; no++)
+        {
+            if (no%10 == 5 || no/10==5) 
+            {
+                System.out.println(no);
+            }
+        }  
+	}
+}
