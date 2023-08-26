@@ -1,0 +1,75 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListDemo 
+{
+
+	public static void main(String[] args) 
+	{
+
+		ArrayList  al = new ArrayList();            // Array --> Growable Array
+	    al.add("hi");
+	    al.add(5);
+	    al.add(true);
+	    al.add(10.4f);
+	    al.add('c');
+
+	    System.out.println(al);
+	    
+	    al.add(2, "bharani");
+	    al.add(2, "bharani");
+
+	    System.out.println(al);
+	    
+	    ArrayList al2 = new ArrayList(); 
+	    al2.add(100);
+	    al2.add(200);
+	    al2.add(300);
+	    al2.addAll(2,al);		                    // add & addAll it will return bollean
+
+	    System.out.println(al2);
+	    
+	    System.out.println(al2.size());	            // It will return integer
+	    
+	    System.out.println(al2.contains("kalai"));
+	    
+	    System.out.println(al2.contains("harish"));
+	    
+	    System.out.println(al2.containsAll(al));	// Contains & ContainsAll it will return boolean
+	    
+	    System.out.println(al2.get(3));		        // It will return object
+	    
+	    System.out.println(al2.indexOf("Kalai"));	// It will return int
+
+	    List ll  = al2.subList(3, 7); 	            // It will return List
+	    System.out.println(ll);
+	    
+	    System.out.println(al2.remove("Kalai"));	// It will return boolean
+	    System.out.println(al2);
+	    
+	    al.clear();
+	    System.out.println(al);
+	    
+	    System.out.println(al.size());
+	    
+	    al.ensureCapacity(2);
+	    
+	    al.add("Bharani");
+	    al.add("Harish");
+	    al.add("Suba");
+	    al.add("Danny");
+	    System.out.println(al);
+	    
+	    al.forEach((n) -> print(n));
+	    
+	   
+	}
+
+	private static Object print(Object n) 
+	{
+		System.out.println("Payilagam Don's " +n);
+		return null;
+	}
+
+}
+
