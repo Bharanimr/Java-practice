@@ -1,0 +1,72 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class CollectionExample3 
+{
+
+	public static void main(String[] args) 
+	{
+
+//		ArrayList marksList = new ArrayList(); 
+//	    Scanner sc = new Scanner(System.in);
+//	    
+//	    while(true)
+//	    {
+
+//	      System.out.println("Enter Mark: ");
+//	      int mark = sc.nextInt();
+//	      
+//	      marksList.add(mark);
+//	      System.out.println("Do You want to proceed? If not, say Stop");
+//	      String input = sc.next();
+		
+//	      if(input.equals("Stop"))
+//	        break; 
+
+//	    }
+//	    System.out.println(marksList);
+	    
+	    
+	    
+	    ArrayList marksList = new ArrayList(); 
+
+	    Scanner sc = new Scanner(System.in);
+
+	    int total = 0;
+
+	    while(true)
+	    {
+
+	    	System.out.println("Enter Mark: ");
+
+	    	String mark = sc.next(); 
+
+	    	try 
+	    	{
+	    		Integer i = Integer.parseInt(mark);
+
+	    		if(i<=100)
+	    		{
+	    			marksList.add(mark);
+	    			total=total+i;
+	      
+	    		}
+
+	    		else
+	    		{
+	    			System.out.println("Enter the correct mark");
+	    		}
+
+	    	}
+	    	
+	    	catch(ClassCastException | NumberFormatException cce)
+	    	{
+	    		break; 
+	    	}
+	      
+	    }
+	    System.out.println(marksList);
+	    System.out.println("Total mar is " +total);
+	}
+
+}
