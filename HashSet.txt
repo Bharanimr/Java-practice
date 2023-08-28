@@ -1,0 +1,48 @@
+import java.util.HashSet;
+import java.util.List;
+
+public class HashSetDemo 
+{
+
+	public static void main(String[] args) 
+	{
+
+		// ---- Set we cannot use index position ---- //
+		
+		HashSet al = new HashSet(); 
+
+	    al.add("hi");
+	    al.add(5);
+	    al.add(true);
+	    al.add(10.4f);
+	    al.add('c');
+
+	    System.out.println(al);
+	    
+	    HashSet al2 = new HashSet(); 
+
+	    al2.add(100);//Integer 
+	    al2.add(200); //Integer
+	    al2.add(300);
+	    al2.addAll(al);
+	    
+	    System.out.println(al2);
+	    
+	    System.out.println(al2.size());
+	    
+	    System.out.println(al2.contains("Harish"));
+	    
+	    System.out.println(al2.containsAll(al));
+
+	    HashSet hs = new HashSet(); 
+	    hs.add(true);
+	    hs.add(10);
+	    hs.add(5.4f);
+	    hs.add("abcd");
+	    hs.add('c');
+	    
+	    System.out.println(hs);
+	    
+	}
+
+}
