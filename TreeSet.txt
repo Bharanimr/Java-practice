@@ -1,0 +1,20 @@
+import java.util.TreeSet;
+
+public class TreeSetDemo 
+{
+
+	public static void main(String[] args) 
+	{
+
+	    TreeSet hs = new TreeSet(); 
+		hs.add("varadhan");
+		hs.add("kavi");
+		hs.add("bharani");
+		  
+		//lexicon: dictionary: 
+		    
+		System.out.println(hs);
+
+	}
+
+}
