@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+
+public class LinkedHashSetDemo 
+{
+
+	public static void main(String[] args) 
+	{
+
+//	    LinkedHashSet hs = new LinkedHashSet(); 
+
+//	    hs.add(true);
+//	    hs.add(10);
+//	    hs.add(5.4f);
+//	    hs.add("abcd");
+//	    hs.add('c');
+//		    
+//	    System.out.println(hs);
+		    
+	    // Interview program - Removing duplicate element
+
+	    ArrayList al = new ArrayList();
+ 
+	    al.add('h');
+	    al.add('a');
+	    al.add('r');
+	    al.add('i');
+	    al.add('s');
+	    al.add('h');
+	    System.out.println(al);
+		    
+	    LinkedHashSet lhs = new LinkedHashSet(al);	// Passing through ArrayList Object
+	    System.out.println(lhs);
+	}
+
+}
