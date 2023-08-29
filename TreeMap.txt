@@ -1,0 +1,30 @@
+import java.util.TreeMap;
+
+public class TreeMapDemo 
+{
+
+	public static void main(String[] args) 
+	{
+
+		TreeMap tm = new TreeMap(); 
+	    
+	      tm.put("virat", 45);
+	      tm.put("dhoni", 55);
+	      tm.put("rohit", 85);
+	      tm.put("dhawan", 50);
+	      tm.put("kapil", 70);
+	      tm.put("rohit", 91);
+	      tm.put("rohit", 100);
+	      
+//	      System.out.println(tm.keySet());
+	      
+//	      System.out.println(tm.values());
+	      
+	      System.out.println(tm);
+
+	      System.out.println(tm.get("rohit"));
+	      
+//	      System.out.println(tm.entrySet());
+	}
+
+}
