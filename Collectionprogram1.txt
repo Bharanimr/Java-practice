@@ -1,0 +1,65 @@
+// ArrayList find total with using without using Generic method
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+
+public class CollectionTasks 
+{
+
+	public static void main(String[] args) 
+	{
+
+		CollectionTasks ct = new CollectionTasks();
+		
+		ct.program1();
+
+	}
+
+    private void program1() 
+	{
+
+		ArrayList al = new ArrayList(); 
+
+	    al.add(10.2);
+	    al.add(20);
+	    al.add(30);
+	    al.add(40);
+
+        find_total(al);
+
+	}
+
+//	private void find_total(ArrayList al) 
+//	{
+
+//		int total = 0; 
+
+//		for(Object ob: al)
+//		{
+
+//		    int value = (Integer)ob;
+//		    total = total + value; 
+
+//		}
+//		System.out.println(total);	
+	
+//	}
+	
+    // Find total using Generic method
+	private static void find_total(ArrayList<Integer> al) 
+	{
+
+	    int total = 0; 
+
+	    for(Integer ob: al)
+	    {
+
+	        //int value = (Integer)ob; //Auto UnBoxing
+	        total = total + ob; 
+
+	    }
+	    System.out.println(total);
+	 
+    }
+}
