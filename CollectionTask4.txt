@@ -1,0 +1,40 @@
+4. Make a collection which should allow only String objects.
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+
+public class CollectionTasks 
+{
+
+	public static void main(String[] args) 
+	{
+
+		CollectionTasks ct = new CollectionTasks();
+		
+        ct.task4();
+
+	}
+
+	private void task4() 
+	{
+
+		ArrayList al = new ArrayList(); 
+
+		Integer no = 5; 
+
+		String name = no.getClass().getSimpleName();
+
+		if(name.equals("String"))
+			al.add(no);
+		  
+		String s = "abcd";
+
+		name = s.getClass().getSimpleName();
+
+		if(name.equals("String"))
+			al.add(s);
+		  
+		System.out.println(al);
+	}
+}
